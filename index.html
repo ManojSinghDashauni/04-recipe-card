@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --color-white: hsl(0, 0%, 100%);
+        --color-stone-100: hsl(30, 54%, 90%);
+        --color-stone-150: hsl(30, 18%, 87%);
+        --color-stone-600: hsl(30, 10%, 34%);
+        --color-stone-900: hsl(24, 5%, 18%);
+        --color-brown-800: hsl(14, 45%, 36%);
+        --color-rose-800: hsl(332, 51%, 32%);
+        --color-rose-50: hsl(330, 100%, 98%);
+      }
+      * {
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        margin: 0;
+        box-sizing: border-box;
+        line-height: 150%;
+      }
+
+      body {
+        background: var(--color-rose-50);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+      }
+
+      .container{
+        background: var(--color-white);
+        padding: 40px;
+        border-radius: 20px;
+        margin-block: 180;
+      }
+
+      .heading-2{
+        font-size: 40px;
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-block: 12px;
+      }
+      .heading-3{
+        font-size: 24px;
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: var(--color-brown-800);
+      }
+      .heading-4{
+        font-size: 20px;
+        color: var(--color-rose-800);
+      }
+      .paragraph{font-size:16px;}
+      .bold{
+        font-weight: 600;
+      }
+
+      .avatar__box{
+        width: 650px;
+        height: auto;
+        }
+        .avatar__img{
+          width:100%;
+          height: auto;
+          border-radius: 20px;
+      }
+
+      .preparation{
+        background: var(--color-rose-50);
+        padding: 20px;
+        margin-block: 20px;
+        border-radius: 10px;
+      }
+      .preparation__list{}
+      .preparation__item{
+        margin-block: 4px;
+      }
+
+      .ingredient{
+        border-bottom: 2px solid var(--color-stone-100);
+      
+        }
+        .ingredient__list{
+          margin-block: 12px;
+        }
+      .ingredient__item{
+        margin-block: 4px;
+      }
+
+      .instruction{
+        border-bottom: 2px solid var(--color-stone-100);
+        margin-block: 24px;
+      }
+      .instruction__list{
+        margin-block: 12px;
+      }
+      .instruction__item{
+        margin-block: 4px;
+      }
+
+      
+      .nutrition__table{
+        width: 100%;
+        
+      }
+      tr{
+        border-bottom: 2px solid var(--color-stone-100);
+        display:flex;
+        justify-content: space-evenly;
+        padding: 4px;
+      }
+      th{
+        color: var(--color-brown-800);
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="avatar__box">
+        <img
+          class="avatar__img"
+          src="./assets/images/image-omelette.jpeg"
+          alt="omeltte"
+        />
+      </section>
+      <h2 class="heading-2">Simple Omelette Recipe</h2>
+      <p class="paragraph">
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
+      <section class="preparation">
+        <h4 class="heading-4">Preparation time</h4>
+        <ul class="preparation__list">
+          <li class="preparation__item">
+            <span class="bold">Total:</span> Approximately 10
+            minutes
+          </li>
+          <li class="preparation__item">
+            <span class="bold">Preparation:</span> 5 minutes
+          </li>
+          <li class="preparation__item">
+            <span class="bold">Cooking:</span> 5 minutes
+          </li>
+        </ul>
+      </section>
+      <section class="ingredient">
+        <h3 class="heading-3">Ingredients</h3>
+        <ul class="ingredient__list">
+          <li class="ingredient__item">2-3 large eggs</li>
+          <li class="ingredient__item">Salt to taste</li>
+          <li class="ingredient__item">Pepper to taste</li>
+          <li class="ingredient__item">1 tablespoon of butter or oil</li>
+          <li class="ingredient__item">
+            Optional fillings: cheese, diced vegetables, cooked meats,herbs
+          </li>
+        </ul>
+      </section>
+      <section class="instruction">
+        <h3 class="heading-3">Instructions</h3>
+        <ol class="instruction__list">
+          <li class="instruction__item">
+            <span class="bold">Beat the eggs: </span>In a bowl, beat the eggs
+            with a pinch of salt and pepper until they are well mixed. You can
+            add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li class="instruction__item">
+            <span class="bold">Heat the pan:</span> Place a non-stick frying pan
+            over medium heat and add butter or oil.
+          </li>
+          <li class="instruction__item">
+            <span class="bold">Cook the omelette: </span>Once the butter is
+            melted and bubbling, pour in the eggs. Tilt the pan to ensure the
+            eggs evenly coat the surface.
+          </li>
+          <li class="instruction__item">
+            <span class="bold">Add fillings (optional):</span> When the eggs
+            begin to set at the edges but are still slightly runny in the
+            middle, sprinkle your chosen fillings over one half of the omelette.
+          </li>
+          <li class="instruction__item">
+            <span class="bold"> Fold and serve: </span>As the omelette continues
+            to cook, carefully lift one edge and fold it over the fillings. Let
+            it cook for another minute, then slide it onto a plate.
+          </li>
+          <li class="instruction__item">
+            <span class="bold">Enjoy: </span>Serve hot, with additional salt and
+            pepper if needed.
+          </li>
+        </ol>
+      </section>
+      <section class="nutrition">
+        <h3 class="heading-3">Nutrition</h3>
+        <p class="paragrah">
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
+        <table class="nutrition__table">
+          <tr>
+            <td>Calories</td>
+            <th>277kcal</th>
+          </tr>
+          <tr>
+            <td>Carbs</td>
+            <th>0kcal</th>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <th>20kcal</th>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <th>22kcal</th>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
